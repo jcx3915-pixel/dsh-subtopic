@@ -7,11 +7,11 @@
   "main": "lib/host.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<你的账号>/dsh-subtopic.git"
+    "url": "git+https://github.com/jcx3915-pixel/dsh-subtopic.git"
   },
-  "homepage": "https://github.com/<你的账号>/dsh-subtopic#readme",
+  "homepage": "https://github.com/jcx3915-pixel/dsh-subtopic#readme",
   "bugs": {
-    "url": "https://github.com/<你的账号>/dsh-subtopic/issues"
+    "url": "https://github.com/jcx3915-pixel/dsh-subtopic/issues"
   },
   "files": [
     "lib",

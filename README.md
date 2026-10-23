@@ -28,14 +28,14 @@
 不想手动放源码？DSH 认得"安装 spec"，一条命令即可（**记得带 tag**）：
 
 ```powershell
-dsh plugin --profile desktop add github:<你的账号>/dsh-subtopic#v0.1.0
+dsh plugin --profile desktop add github:jcx3915-pixel/dsh-subtopic#v0.1.0
 ```
 
-也可以直接对 DSH 说一句"帮我装 `github:<你的账号>/dsh-subtopic#v0.1.0`"，让它自己下载部署；装完重启 DSH。本节下面那套 `link:` 方式是"改源码立刻生效"，适合自己开发。
+也可以直接对 DSH 说一句"帮我装 `github:jcx3915-pixel/dsh-subtopic#v0.1.0`"，让它自己下载部署；装完重启 DSH。本节下面那套 `link:` 方式是"改源码立刻生效"，适合自己开发。
 
 ```powershell
 $profile = "$HOME\.dsh\profiles\desktop"                       # 换成你自己的 profile 目录
-git clone https://github.com/<你的账号>/dsh-subtopic.git "$profile\.dsh-subtopic-source"
+git clone https://github.com/jcx3915-pixel/dsh-subtopic.git "$profile\.dsh-subtopic-source"
 # 再编辑 $profile\package.json：
 #   dependencies       里加  "dsh-subtopic": "link:.dsh-subtopic-source"
 #   dsh.profile.bundles 里加 "dsh-subtopic"

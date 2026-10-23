@@ -35,14 +35,14 @@ Windows PowerShell：
 
 ```powershell
 $profile = "$HOME\.dsh\profiles\desktop"          # 换成你的 profile
-git clone https://github.com/<你的账号>/dsh-subtopic.git "$profile\.dsh-subtopic-source"
+git clone https://github.com/jcx3915-pixel/dsh-subtopic.git "$profile\.dsh-subtopic-source"
 ```
 
 macOS / Linux（bash/sh）：
 
 ```bash
 profile="$HOME/.dsh/profiles/desktop"
-git clone https://github.com/<你的账号>/dsh-subtopic.git "$profile/.dsh-subtopic-source"
+git clone https://github.com/jcx3915-pixel/dsh-subtopic.git "$profile/.dsh-subtopic-source"
 ```
 
 **没有 git**：在 GitHub 页面点 `Code → Download ZIP`，解压后把文件夹改名为 `.dsh-subtopic-source` 放进 profile 目录即可。
@@ -225,7 +225,7 @@ cd "$HOME\Desktop\dsh-subtopic"
 git init -b main
 git add -A
 git commit -m "dsh-subtopic 0.1.0"
-git remote add origin https://github.com/<你的账号>/dsh-subtopic.git
+git remote add origin https://github.com/jcx3915-pixel/dsh-subtopic.git
 git push -u origin main
 ```
 
@@ -237,8 +237,8 @@ git push -u origin main
 
 推之前顺手做两件事：
 
-1. 把所有文档里的 `<你的账号>` 换成真实地址（`README.md` 的安装段、本文件的第 1 步）。
-2. 想发 npm 的话，`package.json` 里 `name` / `version` / `license` / `files` 已经就绪（`private` 已去掉），`repository` / `homepage` 里把 `<你的账号>` 换成真实地址再 `npm publish` 即可。
+1. 确认所有文档里的仓库地址都是你自己的（`README.md` 的安装段、本文件的第 1 步）。
+2. 想发 npm 的话，`package.json` 里 `name` / `version` / `license` / `files` / `repository` 都已就绪（`private` 已去掉），确认后 `npm publish` 即可。
 
 ### 发布之后：别人怎么装
 
@@ -246,10 +246,10 @@ git push -u origin main
 
 ```bash
 # 命令行（等价于 GUI 里"设置 → 内置插件 → 安装"填同一串）
-dsh plugin --profile desktop add github:<你的账号>/dsh-subtopic#v0.1.0
+dsh plugin --profile desktop add github:jcx3915-pixel/dsh-subtopic#v0.1.0
 ```
 
-也可以在 DSH 里直接说一句"帮我装 `github:<你的账号>/dsh-subtopic#v0.1.0`"（或给它仓库地址），**让 DSH 自己下载部署**：安装器认这些写法——`github:owner/repo#tag`、`git+https://github.com/owner/repo.git`、`git@github.com:owner/repo.git`、`gitlab:` / `bitbucket:`，以及 npm 包名。装完**重启 DSH**（宿主半是 ESM，必须重启，见第 4 步）。
+也可以在 DSH 里直接说一句"帮我装 `github:jcx3915-pixel/dsh-subtopic#v0.1.0`"（或给它仓库地址），**让 DSH 自己下载部署**：安装器认这些写法——`github:owner/repo#tag`、`git+https://github.com/owner/repo.git`、`git@github.com:owner/repo.git`、`gitlab:` / `bitbucket:`，以及 npm 包名。装完**重启 DSH**（宿主半是 ESM，必须重启，见第 4 步）。
 
 几点值得先知道：
 
