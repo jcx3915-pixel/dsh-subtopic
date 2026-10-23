@@ -1,0 +1,14 @@
+# 依赖（本插件零运行时依赖；profile 的 link 安装不产生这里的任何内容）
+node_modules/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# 日志与临时备份
+*.log
+package.json.bak*
+pnpm-lock.yaml.bak*
